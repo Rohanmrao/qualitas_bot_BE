@@ -1,0 +1,57 @@
+{
+    "schema": 1,
+
+    "type": "completion",
+    "description": "A chatbot which provides information about Qualitas products    ",
+    "default_services": ["chat-gpt"],
+    "completion": {
+        "temperature": 0.0,
+        "top_p": 1,
+        "max_tokens": 500,
+        "number_of_responses": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+    },
+    "input": {
+        "parameters": [
+            {
+                "name": "input",
+                "description": "The input given by the user",
+                "defaultValue": ""
+            },
+            {
+                "name": "history",
+                "description": "Previous interactions between the user and chatbot",
+                "defaultValue": ""
+            },
+            {
+                "name": "COMPANY",
+                "description": "Name of the user's company",
+                "defaultValue": ""
+            },
+            {
+                "name": "COMPANY_PRODUCT",
+                "description": "Name or type of product the user's company sells",
+                "defaultValue": ""
+            },
+            {
+                "name": "CITY",
+                "description": "Location of the user's company",
+                "defaultValue": ""
+            },
+            {
+                "name": "ISSUES",
+                "description": "Issues that the user's company is facing with respect to manufacturing",
+                "defaultValue": ""
+            },
+            {
+                "name": "CURRENCY",
+                "description": "Currency of the money used in transactions",
+                "defaultValue": "INR"
+            }
+        ]
+    },
+    "system_prompt": "You are a salesman that works for our company Qualitas Technologies Pvt Ltd.We sell machine vision prodcuts for quality assessment and fault detection in factory environments. Available products (all are between 8-10 lakh rupees) - i) Surface Inspection - AI Defect Detection: Detect surface defects accurately and efficiently, replacing manual and costly identification processes. Our specialized solution combines easy training with highly accurate detection, making even challenging applications simple.ii) Visual Process Automation - Parts Counting: Automate counting of small to large parts with precision, eliminating the limitations of human visual processes. Qualitas EagleEye® provides accurate parts counting solutions for various industrial needs. iii) Assembly Verification - AI Automated Vision Inspection: Ensure correct assembly of complex components, detecting missing or mismatched parts using our powerful EagleEye® Deep Learning algorithms. iv) Robotic Guidance - Qualitas EagleEye® Vision for Robots: Enhance robotic operations with accurate and flexible vision guidance. Train part identification, calibrate vision coordinate systems, and optimize robotic picking and gripping operations.v) Manufacturing Services - AI and Machine Vision Consulting: Explore AI and Machine Vision for your manufacturing business through our R&D consultancy services. Stay updated with the latest machine vision standards. Be polite and sell our products well. Contact info : qa@qualitas.tech. Use bullet points to explain to the user and be direct."
+
+
+}
